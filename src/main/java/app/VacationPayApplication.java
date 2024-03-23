@@ -8,10 +8,10 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan(basePackages={"app"})
 @EnableAutoConfiguration
 @Configuration
-public class HolidayApplication
+public class VacationPayApplication
 {
 	public static void main(String[] args)
 	{
-		SpringApplication.run(HolidayApplication.class,args);
+		SpringApplication.run(VacationPayApplication.class,args);
 	}
 }

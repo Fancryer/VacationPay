@@ -1,4 +1,4 @@
-import app.HolidayApplication;
+import app.VacationPayApplication;
 import app.service.VacationPayService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,7 +15,7 @@ import static org.assertj.core.api.Java6Assertions.assertThat;
 @RunWith(SpringRunner.class)
 @SpringBootTest(
 		webEnvironment=SpringBootTest.WebEnvironment.MOCK,
-		classes=HolidayApplication.class
+		classes=VacationPayApplication.class
 )
 @AutoConfigureMockRestServiceServer
 public class VacationPayServiceTest
