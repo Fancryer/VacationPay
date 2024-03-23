@@ -1,4 +1,4 @@
-package app;
+package app.model;
 
 import java.time.LocalDate;
 import java.util.Set;

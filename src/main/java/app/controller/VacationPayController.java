@@ -1,5 +1,6 @@
-package app;
+package app.controller;
 
+import app.service.VacationPayService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;

@@ -1,5 +1,5 @@
 import app.HolidayApplication;
-import app.VacationPayService;
+import app.service.VacationPayService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

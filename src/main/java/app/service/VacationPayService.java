@@ -1,5 +1,6 @@
-package app;
+package app.service;
 
+import app.model.IDayOffProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
