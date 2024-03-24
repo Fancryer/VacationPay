@@ -63,6 +63,7 @@ public class VacationPayService
 		// Calculate the salary per day
 		BigDecimal daySalary=averageSalary.divide(monthLength,RoundingMode.HALF_UP);
 		// Calculate the vacation pay by multiplying the salary per day by the number of work days
+		System.out.println(workDays);
 		return daySalary.multiply(BigDecimal.valueOf(workDays));
 	}
 

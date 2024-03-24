@@ -14,13 +14,12 @@ import static org.assertj.core.api.Java6Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(
-		webEnvironment=SpringBootTest.WebEnvironment.MOCK,
+//		webEnvironment=SpringBootTest.WebEnvironment.MOCK,
 		classes=VacationPayApplication.class
 )
 @AutoConfigureMockRestServiceServer
 public class VacationPayServiceTest
 {
-
 	@Autowired
 	private VacationPayService vacationPayService;
 
@@ -54,6 +53,13 @@ public class VacationPayServiceTest
 				LocalDate.of(2024,1,1),
 				new BigDecimal("60000"),
 				BigDecimal.ZERO
+		);
+		//test from readme
+		testVacationPayCalculation(
+				20,
+				LocalDate.of(2022,1,1),
+				new BigDecimal("5000"),
+				new BigDecimal("1449")//5000/31 is 161.29 -> 161, 161*9 is 1449
 		);
 	}
 
